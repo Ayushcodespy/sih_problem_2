@@ -166,6 +166,59 @@
 }
 
 
+/* testimonials css  */
+.testimonials {
+  background-color: #f7f7f7;
+  padding: 50px;
+  text-align: center;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonial {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 40px); /* Space between items is considered here */
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.testimonial img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.testimonial p {
+  font-size: 16px;
+  color: #666;
+}
+
+.testimonial h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 900px) {
+  .testimonial {
+    width: calc(50% - 40px); /* 2 items per row on medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonial {
+    width: 100%; /* 1 item per row on small screens */
+  }
+}
+
 
 footer {
 	background-color: var(--primary-text-clr);
@@ -174,4 +227,65 @@ footer {
 	text-align: center;
 	clear: both;
   margin-left: 1px;
+}
+
+
+/* css for events section  */
+/* General Styling for Events Section */
+.events {
+  background-color: #e9f5ff; /* Light blue background for a fresh look */
+  padding: 50px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* Use an attractive font */
+}
+
+/* Event List Styles */
+.events ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between grid items */
+}
+
+/* Individual Event Styles */
+.events li {
+  background-color: white; /* Contrast against background */
+  padding: 20px;
+  border: 2px solid #4c9fdb; /* Border with a themed color */
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Events */
+.events li:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+}
+
+/* Event Heading Styles */
+.events h3 {
+  font-size: 20px;
+  color: #2a6fa0;
+  margin-bottom: 10px;
+}
+
+/* Event Paragraph Styles */
+.events p {
+  font-size: 16px;
+  color: #555; /* Darker gray for better readability */
+  margin: 5px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  .events ul {
+    grid-template-columns: 1fr; /* Stack items on small screens */
+  }
+
+  .events li {
+    margin: 10px 0; /* Reduced margin for smaller devices */
+  }
 }

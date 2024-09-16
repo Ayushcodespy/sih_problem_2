@@ -119,6 +119,7 @@
   color: var(--white-clr);
   border-radius: 8px;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .get-started-btn:hover {
@@ -139,6 +140,7 @@
 
 .feature {
   height: auto;
+  overflow: hidden;
   margin: 20px;
   padding: 20px;
   border: 1px solid #ddd;
@@ -158,12 +160,10 @@
 	margin-top: 0;
 }
 
-
-.feature:hover {
-   /* 3D hover effect */
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow for 3D effect */
+.feature img {text-align: center;
+ min-width: 100%;
+ max-height: 200px;
 }
-
 
 
 

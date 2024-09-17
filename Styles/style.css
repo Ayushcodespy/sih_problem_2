@@ -1,12 +1,23 @@
 /* Reset and base styles */
-:root{
+/* :root{
   --primary-dark: #1d1d1d;
   --secondary-dark: #273b40;
   --hover-clr: #3c4748;
-  --secondary-hover-clr: #12de37;
+  --secondary-hover-clr: #408D4C;
   --primary-text-clr: #20278c;
   --secondary-text-clr: #cae9ea;
-  --white-clr: #ffff;
+  --black-clr: #1d1d1d;
+  --white-color: #ffff;
+} */
+
+
+:root {
+  --navbar-color: #0F4D1C;
+  --primary-green-color: #0F4D1C;
+  --secondary-green-color: #408D4C;
+  --primary-blue-color: #2469A2;
+  --white-color: #ffff;
+  --black-color: #1d1d1d;
 }
 
 * {
@@ -23,14 +34,15 @@ body {
 }
 
 svg {
-  fill: var(--white-clr);
+  fill: var(--black-color);
   scale: 1.4;
 }
 
 /* Sidebar styles */
 .sidebar {
   width: 250px;
-  background-color: rgba(0, 0, 0, 0.8);
+  /* background-color: rgba(62, 226, 112, 0.753); */
+  background-image: url(https://media.istockphoto.com/id/1722712516/photo/blurred-shadow-from-palm-leaves-on-the-light-blue-wall-minimal-abstract-studio-background-for.webp?b=1&s=612x612&w=0&k=20&c=DitNIjUo7Kf7gerAQbyHhffWwbsPTtDaFz1Y8rV83XM=);
   height: 100vh;
   padding: 8px 10px 0px 20px;
   position: fixed;
@@ -39,6 +51,7 @@ svg {
   transition: width 0.3s;
   overflow: hidden;
   z-index: 1000;
+  border-right: 1px solid black;
 }
 
 .toggle-btn {
@@ -54,8 +67,8 @@ svg {
 
 
 .toggle-btn svg:hover {
-  fill: var(--primary-dark);
-  background-color: #12de37;
+  fill: var(--white-color);
+  background-color: var(--secondary-green-color);
   border-radius: 2px;
 }
 
@@ -72,7 +85,7 @@ svg {
 }
 
 .logo {
-  color: var(--white-clr);
+  color: var(--secondary-green-color);
   text-align: left;
   display: inline;
   position: relative;
@@ -99,7 +112,7 @@ svg {
 .nav-links a {
   letter-spacing: 0.5px;
   text-decoration: none;
-  color: var(--white-clr);
+  color: var(--primary-green-color);
   padding: 10px;
   display: flex;
   align-items: center;
@@ -158,7 +171,7 @@ main {
 
 .bottom-navbar a {
   text-decoration: none;
-  color: var(--white-clr);
+  color: var(--white-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -222,7 +235,7 @@ main {
 
 .more-items-bottom a {
   text-decoration: none;
-  color: var(--white-clr);
+  color: var(--white-color);
   display: flex;
   flex-direction: column;
   align-items: center;

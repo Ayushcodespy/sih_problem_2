@@ -220,16 +220,6 @@
 }
 
 
-footer {
-	background-color: var(--primary-text-clr);
-	color: #fff;
-	padding: 10px;
-	text-align: center;
-	clear: both;
-  margin-left: 1px;
-}
-
-
 /* css for events section  */
 /* General Styling for Events Section */
 .events {
@@ -288,4 +278,15 @@ footer {
   .events li {
     margin: 10px 0; /* Reduced margin for smaller devices */
   }
+}
+
+
+
+footer {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	clear: both;
+  margin-left: 1px;
 }

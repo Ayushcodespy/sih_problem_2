@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Waste Management Platform</title>
-
+    <link rel="stylesheet" href="/Styles/contactus.css">
     <!-- scroll animation AOS  -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -43,7 +43,7 @@
             <li><a href="#"><i class="fas fa-gift"></i> <span class="link-text">Rewards</span></a></li>
             <li><a href="#"><i class="fas fa-donate"></i> <span class="link-text">Donate</span></a></li>
             <li><a href="#"><i class="fas fa-question-circle"></i> <span class="link-text">Q&A</span></a></li>
-            <!-- <li><a href="#"><i class="fas fa-globe"></i> <span class="link-text">Leaderboard</span></a></li> -->
+            <li><a href="#"><i class="fas fa-globe"></i> <span class="link-text">Leaderboard</span></a></li>
             <li><a href="#"><i class="fas fa-envelope"></i> <span class="link-text">Contact Us</span></a></li>
             <li><a href="#"><i class="fas fa-user"></i> <span class="link-text">Profile</span></a></li>
         </ul>
@@ -64,7 +64,7 @@
             <a href="#"><i class="fas fa-recycle"></i><span class="nav-text">Request Collection</span></a>
             <a href="#"><i class="fas fa-donate"></i><span class="nav-text">Donate</span></a>
             <a href="#"><i class="fas fa-question-circle"></i><span class="nav-text">Q&A</span></a>
-            <!-- <a href="#"><i class="fas fa-globe"></i><span class="nav-text">Leaderboard</span></a> -->
+            <a href="#"><i class="fas fa-globe"></i><span class="nav-text">Leaderboard</span></a>
             <a href="#"><i class="fas fa-user"></i><span class="nav-text">Profile</span></a>
         </div>
     </div>
@@ -81,88 +81,40 @@
 
 
     <main class="content">
-        <div class="hero">
-            <div class="title-container">
-                <h1 class="title">ECO-WARRIORS</h1>
-                <h2 class="subtitle" data-aos="fade-up" data-aos-delay="400" data-aos-duration="3000">
-                    Transform Waste Management into a <span id="highlight-text">Game!</span><br>
-                    <p>Join teams, earn rewards, and make a difference.</p>
-                    <button class="get-started-btn" data-aos="zoom-in" data-aos-delay="900" data-aos-duration="3000">Get Started</button>
-                </h2>
-            </div>
-        </div>
 
-        <!-- ------------- -->
-        <section class="features">
-            <div class="feature" data-aos="fade-right" data-aos-duration="1200">
-                <img src="https://cdn.pixabay.com/photo/2020/04/12/11/59/human-resources-5033959_640.png" alt="">
-                <h2>Team Formation</h2>
-                <p>Create or join teams dedicated to sustainability.</p>
-            </div>
-            <div class="feature" data-aos="fade-left" data-aos-duration="1200">
-                <img src="https://cdn.pixabay.com/photo/2015/11/28/11/22/clipboard-1067035_1280.jpg" alt="">
-                <h2>Dynamic Ranking</h2>
-                <p>Compete with others and see your impact.</p>
-            </div>
-            <div class="feature" data-aos="fade-right" data-aos-duration="1200">
-                <img src="https://cdn.pixabay.com/photo/2023/08/16/14/22/awards-8194253_640.png" alt="">
-                <h2>Rewards System</h2>
-                <p>Earn points for eco-friendly products and discounts.</p>
-            </div>
-            <div class="feature" data-aos="fade-left" data-aos-duration="1200">
-                <img src="https://cdn.pixabay.com/photo/2013/07/12/12/02/pencil-145146_640.png" alt="">
-                <h2>Educational Resources</h2>
-                <p>Learn about waste management best practices.</p>
-            </div>
-        </section>
+        <section class="contact" id="contact">
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you!</p>
+            <div class="contact-container">
+              <div class="contact-form">
+                <form>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+                  <button type="submit">Send Message</button>
+                </form>
+              </div>
+              <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Email: <a href="mailto:info@ecowarriors.org">info@ecowarriors.org</a></p>
+                <p>Phone: +1 555 555 5555</p>
+                <p>Address: 123 Main St, Anytown, USA 12345</p>
+                <p>Follow us on social media:</p>
+                <ul>
+                    <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
 
-        <section class="testimonials">
-            <h2>What Our Users Say</h2>
-            <div class="testimonial-container">
-              <div class="testimonial">
-                <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_640.png" alt="User 1">
-                <p>"EcoWarriors has helped me reduce my waste significantly!"</p>
-                <h3>P.K. Ramchandran</h3>
-              </div>
-              <div class="testimonial">
-                <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_640.png" alt="User 2">
-                <p>"I've learned so much about sustainability through EcoWarriors!"</p>
-                <h3>Shrikant Lakhera</h3>
-              </div>
-              <div class="testimonial">
-                <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_640.png" alt="User 3">
-                <p>"EcoWarriors has inspired me to make a difference in my community!"</p>
-                <h3>Smith Parker</h3>
+                    
+                </ul>
               </div>
             </div>
           </section>
-
-
-          <section class="events">
-            <h2>Upcoming Events</h2>
-            <ul>
-              <li>
-                <h3>Tree Planting Drives</h3>
-                <p>Date: 2024-10-01</p>
-                <p>Time: 10:00 AM</p>
-                <p>Location: City Hall</p>
-              </li>
-              <li>
-                <h3>Recycling Workshops</h3>
-                <p>Date: 2024-10-15</p>
-                <p>Time: 2:00 PM</p>
-                <p>Location: Community Center</p>
-              </li>
-              <li>
-                <h3>Eco Friendly Product Expo</h3>
-                <p>Date: 2024-10-22</p>
-                <p>Time: 6:00 PM</p>
-                <p>Location: Park</p>
-              </li>
-            </ul>
-          </section>
           
-          
+       
 
         <footer>
             <p>&copy; 2023 EcoWarriors </p>

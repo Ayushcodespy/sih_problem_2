@@ -8,20 +8,53 @@
   background-color: #fff;
 }
 
+#eco-logo{
+  margin-top: 20px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  /* display: none; */
+}
+
+@media (max-width: 1080px){
+  #eco-logo{
+    height: 50px;
+  }
+}
+
+@media (max-width: 400px){
+  #eco-logo{
+    display: none;
+  }
+}
+
 .text-section {
   max-width: 50%;
 }
 
 .text-section h1 {
-  color: #2b7a3d;
-  font-size: 48px;
+  font-size: 60px; /* Slightly larger for emphasis */
   margin-bottom: 20px;
+  background: linear-gradient(45deg, #2b7a3d, #4caf50);
+  -webkit-background-clip: text;
+  background-clip: text; /* Standard property for compatibility */
+  color: transparent; /* Gradient text */
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3), /* Main shadow for 3D effect */
+               8px 8px 15px rgba(0, 0, 0, 0.1); /* Softer glow-like shadow */
+  transition: transform 0.3s ease-in-out;
 }
 
 .text-section p {
-  color: #4a4a4a;
-  font-size: 16px;
+  color: var(--primary-blue-color);
+  font-size: 20px;
+  font-weight: 600;
   margin-bottom: 30px;
+}
+
+#highlight-text {
+  font-size: larger;
+  color: #2b7a3d;
+  font-weight: 800;
 }
 
 .read-more {
@@ -37,6 +70,7 @@
   width: 100%;
   max-width: 500px;
   height: auto;
+  margin: 20px;
 }
 
 /* Responsive Design */

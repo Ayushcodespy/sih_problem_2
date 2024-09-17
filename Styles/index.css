@@ -124,10 +124,10 @@
 
 .get-started-btn:hover {
   color: black;
-  background-color: var(--primary-text-clr);
+  background-color: var(--secondary-hover-clr);
   box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7); /* Glow effect */
   transition: box-shadow 0.3s ease, background-color 0.3s ease;
-  border-color: var(--primary-text-clr);
+  border-color: var(--secondary-hover-clr);
 }
 
 .features {
@@ -232,7 +232,7 @@
 /* Event List Styles */
 .events ul {
   list-style: none;
-  margin: 0;
+  margin-top: 20px;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */

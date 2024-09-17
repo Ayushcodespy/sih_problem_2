@@ -3,7 +3,8 @@
   --primary-dark: #1d1d1d;
   --secondary-dark: #273b40;
   --hover-clr: #3c4748;
-  --primary-text-clr: #208c8c;
+  --secondary-hover-clr: #12de37;
+  --primary-text-clr: #20278c;
   --secondary-text-clr: #cae9ea;
   --white-clr: #ffff;
 }
@@ -43,12 +44,19 @@ svg {
 .toggle-btn {
   position: absolute !important;
   right: 20px !important;
-  padding: 10px;
+  padding: 4px;
   cursor: pointer;
   margin-left: auto;
   border: none;
   border-radius: .5em;
   background: none;
+}
+
+
+.toggle-btn svg:hover {
+  fill: var(--primary-dark);
+  background-color: #12de37;
+  border-radius: 2px;
 }
 
 .toggle-btn svg {
@@ -100,7 +108,7 @@ svg {
 }
 
 .nav-links a:hover {
-  background-color: #e0e0e0;
+  background-color: var(--secondary-hover-clr);
   color: var(--hover-clr);
 }
 
@@ -158,7 +166,7 @@ main {
 }
 
 .bottom-navbar a:hover {
-  color: var(--primary-text-clr);
+  color: var(--secondary-hover-clr);
 }
 
 .bottom-navbar i {
@@ -222,6 +230,5 @@ main {
 }
 
 .more-items-bottom a:hover {
-  color: var(--primary-text-clr);
-
+  color: var(--secondary-hover-clr);
 }

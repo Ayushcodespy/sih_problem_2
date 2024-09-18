@@ -14,15 +14,14 @@
     <link rel="stylesheet" href="/Styles/style.css">
     <link rel="stylesheet" href="/Styles/index.css">
     <link rel="stylesheet" href="/Styles/profile.css">
-
+   
     <!-- scripts -->
     <script src="/Scripts/tilt.js"></script>
-
 </head>
 
 <body>
 
-     <!-- ================================common Start================== -->
+     <!-- ============================common Start================== -->
 
      <nav class="sidebar" id="sidebar">
         <div class="top__menu">
@@ -87,8 +86,86 @@
 
 
     <main class="content">
-
-
+      <div class="profile-container">
+        <div class="profile-header">
+            <img src="assest\images\user.jpg" alt="User Photo" class="profile-photo">
+            <div class="profile-info">
+                <h1>John Doe</h1>
+                <p><strong>UID:</strong> 12345ABC</p>
+                <p><strong>Rank:</strong> Captain</p>
+                <p><strong>Location:</strong> Green City</p>
+                <p><strong>Member since:</strong> January 2023</p>
+                <button class="edit-button">Edit Profile</button>
+            </div>
+        </div>
+  
+        <div class="about-section">
+            <h2>About John</h2>
+            <p>John is a passionate environmentalist who has been actively contributing to the community by participating in various waste management and recycling campaigns. His primary focus is on making Green City a zero-waste community by promoting proper waste segregation and disposal techniques. John loves to share his knowledge with others and frequently hosts workshops on recycling best practices.</p>
+        </div>
+  
+        <div class="team-stats">
+            <h2>Team Status</h2>
+            <div class="stats-container">
+                <div class="stat-item card">
+                    <h3>Points Collected</h3>
+                    <p>2,350</p>
+                </div>
+                <div class="stat-item card">
+                    <h3>Waste Segregated (kg)</h3>
+                    <p>150</p>
+                </div>
+                <div class="stat-item card">
+                    <h3>Recycling Rate</h3>
+                    <p>85%</p>
+                </div>
+            </div>
+        </div>
+  
+        <div class="badges-section">
+            <h2>Badges & Achievements</h2>
+            <div class="badges-container">
+                <div class="badge card">
+                    <img src="assest\images\wastewarriors.jpg" alt="Badge 1">
+                    <h3>Waste Warrior</h3>
+                    <p>Awarded: March 2024</p>
+                </div>
+                <div class="badge card">
+                    <img src="assest\images\recycle.jpg" alt="Badge 2">
+                    <h3>Recycling Pro</h3>
+                    <p>Awarded: January 2024</p>
+                </div>
+                <div class="badge card">
+                    <img src="assest\images\comunityleader.png" alt="Badge 3">
+                    <h3>Community Leader</h3>
+                    <p>Awarded: December 2023</p>
+                </div>
+            </div>
+        </div>
+  
+        <div class="tasks-section">
+            <h2>Completed Tasks</h2>
+            <div class="tasks-container">
+                <div class="task card">
+                    <h3>Community Clean-Up Drive</h3>
+                    <p>Completed on: 12th March 2024</p>
+                    <p>John led a successful clean-up drive that involved over 50 community members.</p>
+                </div>
+                <div class="task card">
+                    <h3>Plastic Recycling Workshop</h3>
+                    <p>Completed on: 25th February 2024</p>
+                    <p>John hosted a workshop on how to recycle plastic waste effectively.</p>
+                </div>
+                <div class="task card">
+                    <h3>Neighborhood Waste Segregation Campaign</h3>
+                    <p>Completed on: 10th January 2024</p>
+                    <p>John organized a door-to-door campaign to raise awareness about waste segregation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+     
 
 <!-- ============= Footer =============== -->
 <footer class="footer">
@@ -135,8 +212,8 @@
     </main>
 
     <!-- footer -->
-
-
+   
+         
     <script type="text/javascript">
         VanillaTilt.init(document.querySelector(".hero title"), {
             max: 25,

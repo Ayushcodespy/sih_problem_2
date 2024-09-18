@@ -108,6 +108,9 @@ svg {
 .nav-links li {
   margin: 15px 0;
 }
+.nav-links li:hover {
+  background-color: var(--secondary-green-color);
+}
 
 .nav-links a {
   letter-spacing: 0.5px;
@@ -121,7 +124,7 @@ svg {
 }
 
 .nav-links a:hover {
-  background-color: var(--secondary-green-color);
+  
   color: var(--white-color);
 }
 
@@ -207,10 +210,18 @@ main {
 
   .more-items-bottom {
 
-    display: flex;
+    display: grid;
+    justify-content: space-around;
     flex-direction: row;
     
   }
+
+  @media (max-width: 500px) {
+    .bottom-navbar a {
+      width: 60px;
+      text-align: center;
+  }
+}
 
    /* Additional space when "More" items are visible */
   /* main {

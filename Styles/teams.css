@@ -1,59 +1,9 @@
-:root {
-    --navbar-color: #0F4D1C;
-    --primary-green-color: #0F4D1C;
-    --secondary-green-color: #408D4C;
-    --primary-blue-color: #2469A2;
-    --border-radius: 10px;
-    --transition-time: 0.3s; /* Smooth transition */
-    --card-bg-color: rgba(143, 237, 170, 0.521);
-}
-
-body {
-    /* background-color: var(--bl) */
-    color: var(--white-color);
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex; /* To accommodate the side nav */
-}
-
-/* Side Nav */
-.navbar {
-    width: 250px;
-    background-color: var(--navbar-color);
-    height: 100vh;
-    padding: 20px;
-    box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-.navbar a {
-    color: var(--white-color);
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 15px;
-}
-
-.navbar a:hover {
-    background-color: var(--secondary-green-color);
-    color: var(--black-color);
-    transition: var(--transition-time);
-}
-
-.main-content {
-    margin-left: 250px; /* Space for the side nav */
-    padding: 20px;
-    width: calc(100% - 250px);
-}
 
 /* Teams Page */
 .teams-page {
     background: url('/images/battle-background.jpg') no-repeat center center;
     background-size: cover;
-    color: var(--white-color);
+    /* color: var(--lighter-blue-color); */
     padding: 40px;
     text-align: center;
 }
@@ -82,15 +32,16 @@ body {
 }
 
 .stat-card {
-    background-color: var(--card-bg-color); /* Keeping this as is since it's not defined in the new root */
+    background-color: var(--lighter-blue-color); /* Keeping this as is since it's not defined in the new root */
     padding: 20px;
-    border-radius: var(--border-radius);
+    border-radius: 8px;
+    border: 1px solid var(--primary-blue-color);
     transition: background-color var(--transition-time), transform var(--transition-time);
     width: 30%;
 }
 
 .stat-card h2, .stat-card p {
-    color: var(--primary-blue-color);
+    color: var(--hard-green);
     margin-bottom: 10px;
 }
 
@@ -101,13 +52,14 @@ body {
 
 .progress-bar {
     background-color: var(--white-color);
-    border-radius: var(--border-radius);
+    border-radius: 8px;
+    border: 0.5px solid var(--secondary-green-color);
     overflow: hidden;
     height: 20px;
 }
 
 .progress {
-    background-color: var(--primary-blue-color);
+    background-color: var(--secondary-green-color);
     height: 100%;
     text-align: center;
     color: var(--white-color);
@@ -124,7 +76,7 @@ body {
 }
 
 .member-card {
-    background-color: var(--card-bg-color); /* Keeping this as is since it's not defined in the new root */
+    background-color: var(--lighter-blue-color); /* Keeping this as is since it's not defined in the new root */
     border: 2px solid var(--primary-blue-color);
     border-radius: var(--border-radius);
     padding: 20px;
@@ -166,7 +118,7 @@ body {
 }
 
 button {
-    background-color: var(--primary-green-color);
+    background-color: var(--secondary-green-color);
     color: var(--white-color);
     border: none;
     padding: 10px 15px;
@@ -190,9 +142,10 @@ button:hover {
 
 /* Add Member Section */
 .add-member {
-    background: var(--card-bg-color);
+    background: var(--light-green-color);
     padding: 20px;
     border-radius: 10px;
+    border: 2px solid var(--primary-blue-color);
     color: var(--white-color);
     margin-bottom: 30px;
     margin-left: 20%;
@@ -200,6 +153,7 @@ button:hover {
 }
 
 .add-member h2 {
+    color: var(--hard-green);
     font-size: 1.8rem;
     margin-bottom: 15px;
 }
@@ -211,19 +165,20 @@ button:hover {
 }
 
 .add-member label {
+    text-align: left;
     font-size: 1rem;
-    color: #ccc;
+    color: var(--black-color);
 }
 
 .add-member input {
     padding: 10px;
     border-radius: 5px;
-    border: none;
+    border: 0.5px solid var(--light-blue-color);
     font-size: 1rem;
 }
 
 .add-member button {
-    background-color: var(--primary-green-color);
+    background-color: var(--secondary-green-color);
     color: var(--white-color);
     padding: 10px 20px;
     border: none;
@@ -233,20 +188,24 @@ button:hover {
 }
 
 .add-member button:hover {
-    background-color: var(--secondary-green-color);
+    background-color: var(--primary-green-color);
 }
 
+.more-member-btn{
+    background-color: var(--secondary-green-color);
+    margin-bottom: 30px;
+}
 /* Upcoming Events Section */
 .upcoming-events {
-    background-color: var(--black-color);
+    background-color: var(--light-green-color);
     padding: 40px;
     border-radius: var(--border-radius);
-    margin-bottom: 40px;
+    margin: 40px 0px;
 }
 
 .section-title {
     font-size: 2.5rem;
-    color: var(--secondary-green-color);
+    color: var(--primary-blue-color);
     text-align: center;
     margin-bottom: 30px;
 }
@@ -258,10 +217,9 @@ button:hover {
 }
 
 .event-card {
-    background-color: rgba(255, 255, 255, 0.1); /* Keeping this as is since it's not defined in the new root */
+    background-color: rgba(255, 255, 255, 0.73); /* Keeping this as is since it's not defined in the new root */
     padding: 20px;
-    border-radius: var(--border-radius);
-    transition: transform var(--transition-time), background-color var(--transition-time);
+    border-radius: 8px;
     text-align: center;
 }
 
@@ -273,22 +231,22 @@ button:hover {
 
 .event-card h3 {
     font-size: 1.5rem;
-    color: var(--white-color);
+    color: var(--black-color);
     margin-bottom: 10px;
 }
 
 .event-card p {
-    color: #e0e0e0; /* Keeping this as is since it's not defined in the new root */
+    color: var(--hard-green); /* Keeping this as is since it's not defined in the new root */
     font-size: 1rem;
     margin-bottom: 15px;
 }
 
 .read-more-btn {
-    background-color: var(--secondary-green-color);
+    background-color: var(--light-blue-color);
     color: var(--black-color);
     padding: 10px 20px;
-    border: none;
-    border-radius: var(--border-radius);
+    border: 1px solid var(--black-color);
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color var(--transition-time);
 }
@@ -300,7 +258,7 @@ button:hover {
 
 .event-card:hover {
     transform: translateY(-5px);
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: var(--light-blue-color);
 }
 
 #team_member {
@@ -310,9 +268,9 @@ button:hover {
 
 /* Completed Tasks Section */
 .completed-tasks {
-    background-color: var(--black-color);
+    background-color: var(--lighter-blue-color);
     padding: 40px;
-    border-radius: var(--border-radius);
+    border-radius: 8px;
 }
 
 .tasks-grid {
@@ -322,27 +280,27 @@ button:hover {
 }
 
 .task-card {
-    background-color: rgba(255, 255, 255, 0.1); /* Keeping this as is since it's not defined in the new root */
+    border-radius: 8px;
+    background-color: var(--light-blue-color); /* Keeping this as is since it's not defined in the new root */
     padding: 20px;
-    border-radius: var(--border-radius);
     text-align: center;
     transition: transform var(--transition-time), background-color var(--transition-time);
 }
 
 .task-card h3 {
     font-size: 1.5rem;
-    color: var(--white-color);
+    color: var(--hard-green);
     margin-bottom: 10px;
 }
 
 .task-card p {
     font-size: 1rem;
-    color: #e0e0e0; /* Keeping this as is since it's not defined in the new root */
+    color: var(--secondary-green-color); /* Keeping this as is since it's not defined in the new root */
 }
 
 .task-card:hover {
     transform: translateY(-5px);
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--white-color);
 }
 
 /* Media Queries */

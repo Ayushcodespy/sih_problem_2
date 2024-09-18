@@ -7,7 +7,7 @@
     --highlight-yellow: #f0db4f;
 }
 
-.container {
+.rank-container {
     width: 100%;
     /* max-width: 1200px; */
     margin: 20px auto;
@@ -16,6 +16,7 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     border: 2px solid var(--primary-green-color);
+    align-items: center;
 }
 
 h1 {

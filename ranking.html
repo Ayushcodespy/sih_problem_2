@@ -12,7 +12,6 @@
 
     <!-- css -->
     <link rel="stylesheet" href="/Styles/style.css">
-    <link rel="stylesheet" href="/Styles/index.css">
     <link rel="stylesheet" href="/Styles/ranking.css">
 
     <!-- scripts -->
@@ -88,6 +87,43 @@
 
     <main class="content">
 
+      <div class="container"></div>
+        <div id="h1"><h1>Ranking</h1></div>
+    
+        <form id="rankForm">
+            <select id="categorySelect" disabled>
+                <option value="india">India</option>
+                <option value="state">State</option>
+                <option value="district">District</option>
+            </select>
+            <input type="text" id="nameInput" placeholder="Search by name">
+            <input type="number" id="scoreInput" placeholder="Search by score" min="0">
+            <div id="stateContainer" class="hidden">
+                <select id="stateSelect">
+                    <!-- States will be populated here -->
+                </select>
+            </div>
+            <div id="districtContainer" class="hidden">
+                <select id="districtSelect">
+                    <!-- Districts will be populated here based on selected state -->
+                </select>
+            </div>
+        </form>
+        <table id="rankTable">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Team Name</th>
+                    <th>Score</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rankings will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+
 
 
 <!-- ============= Footer =============== -->
@@ -133,7 +169,7 @@
   </footer>
 
     </main>
-
+    
     <!-- footer -->
 
 
@@ -154,6 +190,7 @@
     </script>
 
     <script src="/Scripts/main.js"></script>
+    <script src="/Scripts/ranking.js"></script>
 
 </body>
 

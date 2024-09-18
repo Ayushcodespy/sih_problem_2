@@ -12,10 +12,14 @@
 
 
 :root {
+  --dark-green: #00796b;
   --navbar-color: #0F4D1C;
+  --hard-green: #004d40;
   --primary-green-color: #0F4D1C;
   --secondary-green-color: #408D4C;
   --primary-blue-color: #2469A2;
+  --light-blue-color: #b2ebf2;
+  --lighter-blue-color: #e0f7fa;
   --white-color: #ffff;
   --black-color: #1d1d1d;
 }

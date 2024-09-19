@@ -14,7 +14,7 @@ document.getElementById("toggle-btn").addEventListener("click", function () {
   if (sidebar.classList.contains("collapsed")) {
     logo.classList.add("hidden");
     navLinks.forEach((link, index) => {
-      if (index >= 4) {
+      if (index >= 9) {
         link.style.display = "none";  // Hide extra links
       }
     });
